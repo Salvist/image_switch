@@ -4,6 +4,7 @@ import 'package:image_switch/data/image_repository.dart';
 import 'package:image_switch/presentation/widgets/image_background.dart';
 import 'package:image_switch/presentation/widgets/image_view.dart';
 import 'package:image_switch/presentation/widgets/theme_notifier.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 class ImageSwitchPage extends StatefulWidget {
   final ImageRepository imageRepository;
@@ -92,7 +93,7 @@ class _ImageSwitchPageState extends State<ImageSwitchPage> {
                 IconButton.filled(
                   onPressed: themeNotifier.toggleTheme,
                   icon: Icon(
-                    themeNotifier.themeMode == ThemeMode.dark ? Icons.light_mode : Icons.dark_mode,
+                    themeNotifier.themeMode == ThemeMode.dark ? LucideIcons.sun : LucideIcons.moon,
                   ),
                 ),
               ],
